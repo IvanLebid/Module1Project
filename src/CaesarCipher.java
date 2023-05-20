@@ -9,7 +9,7 @@ public class CaesarCipher {
         for (char symbol : text.toCharArray()) {
             if (myAlphabet.contains(symbol)) {
                 int oldIndex = myAlphabet.indexOf(symbol);
-                int newIndex = (oldIndex + key) % myAlphabet.size();
+                int newIndex = (oldIndex + Math.abs(key)) % myAlphabet.size();
                 encryptedText.append(myAlphabet.get(newIndex));
             } else {
                 encryptedText.append(symbol);
@@ -25,7 +25,7 @@ public class CaesarCipher {
         for (char symbol : text.toCharArray()) {
             if (myAlphabet.contains(symbol)) {
                 int oldIndex = myAlphabet.indexOf(symbol);
-                int newIndex = (oldIndex - key + myAlphabet.size()) % myAlphabet.size();
+                int newIndex = (oldIndex - Math.abs(key) + myAlphabet.size()) % myAlphabet.size();
                 if (newIndex < 0) {
                     newIndex = myAlphabet.size() + newIndex;
                 }
