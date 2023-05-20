@@ -34,10 +34,7 @@ public class CaesarCipher {
             } else {
                 decryptedText.append(symbol);
             }
-//                decryptedText.append(myAlphabet.get(newIndex));
-//            } else {
-//                decryptedText.append(symbol);
-//            }
+
         }
 
 
