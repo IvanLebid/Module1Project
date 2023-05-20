@@ -14,26 +14,39 @@
    (приклад шляху: E:\JavaRush\FinalProject1\Module1Project\out\artifacts\Module1Project_jar\Module1Project.jar)
    натиснути ENTER;
 2. Взаємодія з командним рядком(обрання операції):
-   після виконання першого кроку повинен з'явитися такий рядок:  
-   ![image](https://github.com/IvanLebid/Module1Project/assets/134092668/69132eca-72ed-4dff-8bac-3cd3a178962b)
+   після виконання першого кроку повинен з'явитися такий рядок:
+   
+    ![](ScreenshortsModule1/command.png)
+  
    тут потрібно обрати команду котру потрібно використати та ввести її, після чого натиснути ENTER
-   (-ENCRYPT — зашифрувати файл
-   -DECRYPT — розшифрувати файл
+  
+   (-ENCRYPT — зашифрувати файл;
+   -DECRYPT — розшифрувати файл;
    -BRUTE_FORCE — використати brute force);
+   
 3. Взаємодія з командним рядком(обрання шляху до файлу над яким треба провести операцію)
-   ![image](https://github.com/IvanLebid/Module1Project/assets/134092668/c0466f8a-26e8-4493-ad55-5efb039a5fa1)
+
+   ![](ScreenshortsModule1/filePath.png)
+   
    в цей рядок потрібно написати шлях до файлу який потрібно зашифрувати/дешифрувати та натиснути ENTER
+   
    (приклад шляху: E:\JavaRush\FinalProject1\Module1Project\src\test.txt);
+   
 4. Якщо було обрано команду ENCRYPT або DECRYPT з'явиться такий рядок
-   ![image](https://github.com/IvanLebid/Module1Project/assets/134092668/5e1daecc-2b75-47cd-bac4-acf37163bb78)
+   
+   ![](ScreenshortsModule1/key.png)
+   
    в якому потрібно вказати значення ключа(значення зсуву) та натиснути ENTER. (Зашифрований/дешифрований файл має з'явитися в тій же папці, 
    що й вхідний файл з позначкою [ENCRYPTED] або [DECRYPTED]).
+
 Також можна запустити jar файл передавши всі агрументи наступним чином:
 java -jar "шлях до jar файлу" command filePath key
-(де: -command — операція яку треба виконати
--filePath — шлях до вхідного файлу
+
+(де: -command — операція яку треба виконати;
+-filePath — шлях до вхідного файлу;
 -key — значення ключа (зсуву)).
- після цього натинути ENTER.
+ 
+ Після цього натинути ENTER.
  
  *******************************************************************************************************
  
